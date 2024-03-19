@@ -22,10 +22,10 @@ body{
     /* position: relative; */
     flex-direction: row;
     background-color: white;
-    width: 880px;
+    width:100%;
     gap:30px;
     border-radius: 5px;
-    padding-left: 30px;
+    padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -36,10 +36,8 @@ body{
 .link{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 10px;
 }
 
 .link p{
@@ -59,7 +57,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 315px;
+    justify-content: space-between;
 }
 .other button{
     /* position: relative;  */
