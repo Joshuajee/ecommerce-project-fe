@@ -1,0 +1,109 @@
+*{  
+    font-family: sans-serif;
+    font-size: normal;
+    font-style: normal;
+    
+}
+
+
+
+img{
+    margin-top: 70px;
+    justify-content: center;
+    
+}
+
+
+
+p{
+    
+    font-style: normal;
+    font-size:20px;
+    color: rgb(2, 1, 1);
+    text-align: left;
+    color: dimgray;
+    margin-left: 10px;
+    
+}
+
+input{
+    font-size: small;
+    padding-bottom: 10px;
+    padding-right: 80px;
+    text-align: left;
+    margin-right: 100px;
+    width: 70%;
+    height: 50%;
+}
+
+
+.Sign{
+    font-style: normal;
+    box-sizing:border-box;
+    background-color:#35AA47;
+    color: white;
+    width: 200px;
+    height: 40px;
+    padding:10px;
+    border-radius: 5px;
+    margin: 8px;
+    margin-left: 100px;
+    
+    
+}
+
+.hero-section{
+    display:flex;
+    background-color: white;
+    border-radius: 3px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center; text-align: center;
+    padding-bottom: 400px;
+    font-weight: bold;
+    margin-left: 40%;
+
+}
+.hero-overlay {
+    display: flex;
+    gap: 40%;
+   
+    
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+   justify-content: center; text-align: center;
+}
+.login {
+    font-size: small;
+    background-color: white;
+    color: red;
+    padding-right: 80px;
+    padding-left: 100px;
+    border-radius: 3px;
+    border-color: red;
+}
+.Create {
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    background-color: #35AA47;
+    font-family: cursive;
+    font-weight: bold;
+    
+    padding-bottom: 20px;
+}
+.p1 {
+    color: dimgray;
+    font-size: medium;
+    text-align: center;
+}
+.p2 {
+    color: dimgray;
+    font-size: medium;
+    text-align: center;
+}
