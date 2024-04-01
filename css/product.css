@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .container{
@@ -19,7 +20,7 @@ body{
 
 .first-product{
     display: flex;
-    /* position: relative; */
+    position: relative;
     flex-direction: row;
     background-color: white;
     width:100%;
@@ -32,6 +33,7 @@ body{
 .product .img-l{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .link{
     display: flex;
@@ -51,7 +53,7 @@ body{
     display: flex;
     position: relative;
     flex-direction:column;
-    width: 545px;
+    width: 100%;
 }
 .other{
     display: flex;
@@ -133,11 +135,14 @@ body{
     color: gray;
 }
 
+.price h5{
+    color: red;
+}
+
 .fa-solid{
     position:relative;
     color: white;
     zoom: 1;
-    margin-top:5px;
 
 }
 .check{
@@ -147,8 +152,8 @@ body{
     display: flex;
     width: 100%;
     height: 40px;
-    gap: 180px;
     align-items: center;
+    gap: 35%;
     margin-bottom:10px;
     color: white;
     border: none;
@@ -169,7 +174,8 @@ body{
 
 .product-DR {
     background-color:white;
-    width: 300px;
+    justify-content: center;
+    width: 80%;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -195,7 +201,7 @@ body{
     width: 80%;
     height: 40px;
     margin: 10px;
-    margin-left: 30px;
+    margin-left: 28px;
     outline:none;
     text-indent: 5px;
 }
@@ -251,7 +257,7 @@ body{
     /* position: relative; */
     flex-direction: column;
     background-color: white;
-    width: 300px;
+    width: 80%;
     margin-top: 20px;
     border-radius: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -269,4 +275,66 @@ body{
 .seller-info div{
     display: flex;
     flex-direction: row;
+}
+
+
+/* Mobile accessibility */
+
+@media screen and ( max-width:600px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .container{
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .first-product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-l{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .link{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    
+    .discriptions{
+        display: flex;
+        position: relative;
+        flex-direction:column;
+        width: 100%;
+        font-size: medium;
+    }
+
+
+    .seller-info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .product-DR{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+    }
+
+
 }

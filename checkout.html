@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/checkout.css">
+    <!-- <link rel="stylesheet" href="js/checkout.js"> -->
     <title>Checkout</title>
 </head>
 <body class="container">
@@ -141,9 +142,13 @@
             <p>APPLY</p>
         </div>
         <hr>
-        <button class="confirm"> <a href="">CONFIRM ORDER </a> </button>
+    
+        <script src="https://checkout.flutterwave.com/v3.js"></script>
+
+            <button id ="confirm" type="button" onclick="makePayment()">CONFIRM ORDER  </button>
+
+        <script src="js/checkout.js"></script>
     </div>
    
-
 </body>
 </html>
