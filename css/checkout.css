@@ -305,6 +305,10 @@ body{
         flex-direction: column;
         padding: 10px;
     }
+    .shiping{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* #confirm a {
