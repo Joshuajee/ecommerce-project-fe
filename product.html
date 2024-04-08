@@ -8,10 +8,11 @@
     <title>Document</title>
 </head>
 <body class="container">
+
         <div class="first-product ">
             <div class="img-l">
                 <div class="tele">
-                    <img src="img/1.jpg" alt="tv" width="230px" height="220px">
+                    <img id="product-image" src="img/1.jpg" alt="tv" width="230px" height="220px">
                 </div>
                 <hr>
                 <div class="link">
@@ -34,7 +35,7 @@
                     </div>
                 </div>
                 <br>
-                <h4>
+                <h4 id="product-name">
                     LG 43" Inches LED Smart TV (43LM6370) - Black + 2 Year Warranty
                 </h4>
                     <p>
@@ -43,9 +44,8 @@
                 </a>
                 <hr>
                 <div class="price">
-                    <h1> #500,000 </h1>
-                    <h3> #600,000 </h3>
-                    <h5>-10%</h5>
+                    <h1  id="product-price"> #500,000 </h1>
+                    <h3 id="product-discount"> #600,000 </h3>
                 </div>
                 <p> 7 units left </p>
                 <p>+ shipping from ₦ 1,460 to IBADAN-ELEYELE</p>
@@ -58,12 +58,10 @@
                     <a href="#">(27 verified rating)</a>
                 </span>
                 <br>
-                <a href="cart.html ">
-                <button class="cart">
+                <button id="add-toCart" class="cart">
                     <i class="fa-solid fa-cart-shopping"></i>
                     ADD TO CART
                 </button>
-                 </a>
                 <hr>
                 <br>
                 <h4>PROMOTION</h4>
@@ -142,5 +140,35 @@
                     <h4>100%  Seller Score  </h4>
             </div>
         </div>
+
+        <script src="js/shop.js"></script>
+
+        <script>
+
+            const searchParams = new URLSearchParams(window.location.search);
+
+            const id = searchParams.get('id'); // price_descending
+
+            const product = products.filter(product => product.id == id)[0]
+
+            document.getElementById("product-image").src = product.image
+
+            console.log(product)
+
+            document.getElementById("product-price").innerHTML=product.price
+
+            document.getElementById("product-discount").innerHTML=product.price*1.2
+
+            document.getElementById("product-name").innerHTML=product.name
+
+
+            document.getElementById("add-toCart").addEventListener('click', ()=> addToCart(id))
+
+
+
+
+
+        </script>
+
 </body>
 </html>
