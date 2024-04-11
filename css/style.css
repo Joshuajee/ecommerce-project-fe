@@ -452,8 +452,11 @@ margin-top: 15px;
 
 #cart-count{
     background: red;
-    padding: 10px;
+    padding: 4px;
+    padding-left:8px ;
+    padding-right:8px ;
     margin-left: 4px;
-    border-radius: 20px;
+    border-radius:100px;
     color: white;
+    font-size: smaller;
 }
