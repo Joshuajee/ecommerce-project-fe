@@ -2,7 +2,7 @@ function makePayment() {
     FlutterwaveCheckout({
       public_key: "FLWPUBK_TEST-f40867be5a3f3cd6ee5e8a34e42e6f7b-X",
       tx_ref: "txref" + Date.now(),
-      amount: 400500,
+      amount: 300500,
       currency: "NGN",
       payment_options: "card, banktransfer, ussd",
       meta: {
