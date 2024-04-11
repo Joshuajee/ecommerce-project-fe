@@ -94,7 +94,7 @@
                             <h5> Shipment 1/2</h5>
                             <h6>Fulfilled by Flavihno</h6>
                         </div>
-                        <div class="ship">
+                        <div id="ship" class="ship">
                             <div class="DD">
                                 <h4>Door Delivery</h4>
                                 <h5>Delivery between <b>22 March</b> and <b>27 March.</b></h5>
@@ -163,16 +163,16 @@
             <hr>
             <div class="SUM">
                 <h6>Item's Total</h6>
-                <h5>#400,500</h5>
+                <h5 id="price">#400,500</h5>
             </div>
-            <div  class="SUM">
+            <div class="SUM">
                 <h6>Delivery Fees</h6>
                 <h5>#500</h5>
             </div>
             <hr>
             <div  class="SUM">
                 <h5> Total</h5>
-                <h5>#400,500</h5>
+                <h5 id="total">#400,500</h5>
             </div>
             <hr>
             <div  class="SUM">
@@ -193,6 +193,53 @@
     
 
     </div>
+
+
+    <script src="js/shop.js"></script>
+
+    <script>
+
+      const div = document.getElementById("ship")
+
+      const carts = getCart()
+
+      let price = 0 ;
+
+      div.innerHTML = `       <div class="DD">
+                                <h4>Door Delivery</h4>
+                                <h5>Delivery between <b>22 March</b> and <b>27 March.</b></h5>
+                            </div>`
+
+      for (let i = 0; i < carts.length ; i++) {
+
+        const cart = carts[i]
+
+        price += cart.price 
+
+
+        div.innerHTML += `
+            <div id="pro-order">
+                                <img src="${cart.image}" alt="" height="50px">
+                                <div>
+                                    <p>${cart.name}</p>
+                                    <h6>Price: &#8358; ${cart.price}</h6>
+                                </div>
+                            </div>
+        
+        `
+
+       
+          
+      }
+       
+      document.getElementById('price').innerHTML = "&#8358; " + price
+
+      document.getElementById('total').innerHTML = "&#8358;" + (price +500) 
+
+
+
+
+    </script>
    
 </body>
 </html>
