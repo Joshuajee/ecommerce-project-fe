@@ -2,7 +2,7 @@ function makePayment() {
     FlutterwaveCheckout({
       public_key: "FLWPUBK_TEST-f40867be5a3f3cd6ee5e8a34e42e6f7b-X",
       tx_ref: "txref" + Date.now(),
-      amount: 1024672,
+      amount: 400500,
       currency: "NGN",
       payment_options: "card, banktransfer, ussd",
       meta: {
@@ -12,7 +12,7 @@ function makePayment() {
       customer: {
         email: "mflavihno2@gmail.com",
         phone_number: "08100000000",
-        name: "Ayomide Jimi-Oni",
+        name: "Favour ol",
       },
       customizations: {
         title: "Flutterwave Developers",
