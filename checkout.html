@@ -165,14 +165,14 @@
                 <h6>Item's Total</h6>
                 <h5 id="price">#400,500</h5>
             </div>
-            <div class="SUM">
+            <div id="" class="SUM">
                 <h6>Delivery Fees</h6>
                 <h5>#500</h5>
             </div>
             <hr>
             <div  class="SUM">
                 <h5> Total</h5>
-                <h5 id="total">#400,500</h5>
+                <h5 id="Total">#400,500</h5>
             </div>
             <hr>
             <div  class="SUM">
@@ -191,75 +191,8 @@
             <script src="js/checkout.js"></script>
         </div>
     
-                <div class="ship-details">
-                    <div id="shipment">
-                        <h5> Shipment 2/2</h5>
-                        <h6>Fulfilled by Favour Store</h6>
-                    </div>
-                    <div class="ship">
-                        <div class="DD">
-                            <h4>Door Delivery</h4>
-                            <h5>Delivery between <b>22 March</b> and <b>27 March.</b></h5>
-                        </div>
-                        <hr>
-                        <div id="pro-order">
-                            <img src="img/1.jpg" alt="" height="50px">
-                            <div>
-                                <p> LG 43" Inches LED Smart TV (43LM6370) - Black + 2 Year Warranty</p>
-                                <h6>QTY: 1</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="modify-cart">
-                <a href="#">MODIFY CART</a>
-            </div>
-        </div> 
-
-        <div class="payment">
-            <div id="pay">
-                <h4>  <img src="img/correct.png" alt="correct" id="correct">      3. PAYMENT METHOD</h4>
-
-                <a href="#"> Change  <img src="img/right-arrow.png" alt="right-arrow" id="right-arrow" height="10px"></a>
-            </div>
-            <hr>
-            <div class="pay-method">
-                <h4>Pay with Cards, Bank Transfer or USSD</h4>
-
-                <h5>You will be redirected to our secure checkout page.</h5>
-            </div>
-        </div>
 
     </div>
-    
-    <div class="Summary">
-        <h5>Order Summary</h5>
-        <hr>
-        <div class="SUM">
-            <h6>Item's Total</h6>
-            <h5>#1,024,672</h5>
-        </div>
-        <div  class="SUM">
-            <h6>Delivery Fees</h6>
-            <h5>#24,672</h5>
-        </div>
-        <hr>
-        <div  class="SUM">
-            <h5> Total</h5>
-            <h5>#1,024,672</h5>
-        </div>
-        <hr>
-        <div  class="SUM">
-            <div>
-                <img src="img/web-coding.png" alt="code" id="code">
-                <input type="text" placeholder="Enter Code here">
-            </div>
-            <p>APPLY</p>
-        </div>
-        <hr>
-    
-        <script src="https://checkout.flutterwave.com/v3.js"></script>
 
 
     <script src="js/shop.js"></script>
@@ -299,9 +232,9 @@
           
       }
        
-      document.getElementById('price').innerHTML = "&#8358; " + price
+      document.getElementById('price').innerHTML = "&#8358;  " + price 
 
-      document.getElementById('total').innerHTML = "&#8358;" + (price +500) 
+      document.getElementById('Total').innerHTML = "&#8358;" + (price+500 )
 
 
 
