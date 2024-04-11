@@ -9,18 +9,20 @@ a{
 }
 
 .container{
+    display: flex;
+    flex-direction:row;
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
+    gap: 20px;
 
 }
 
 body{
-    display: flex;
-    flex-direction:row;
+    
     background-color: #f1f1f2;
     width: 100%;
-    gap: 20px;
+   
 
 }
 

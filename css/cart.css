@@ -4,14 +4,16 @@
 }
 
 body{
-    display: flex;
-    flex-direction: row;
+    
     background-color: #f1f1f2;
     gap: 20px;
     
 }
 
 .container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
     padding-top: 50px;
     padding-right: 100px;
 }
@@ -23,7 +25,7 @@ body{
 
 }
 
-#cart{
+#carts{
     display: flex;
     flex-direction: column;
     background-color: white;
