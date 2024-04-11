@@ -196,14 +196,17 @@ ul li a {
 
         #products{
             display: flex;
+            justify-content: center;
             flex-direction: row;
             margin:50px ;
             gap: 20px;
+            flex-wrap: wrap;
         }
 
         .product{
             display: flex;
             flex-basis: 250px;
+            min-width: 250px;
             align-items: center;
             padding: 20px;
             padding-left: 30px;
@@ -444,3 +447,13 @@ margin-top: 15px;
      margin-top: -11px;
  }
          }
+
+
+
+#cart-count{
+    background: red;
+    padding: 10px;
+    margin-left: 4px;
+    border-radius: 20px;
+    color: white;
+}
